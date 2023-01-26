@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 1rem;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+}
+section {
+  padding: 40px 0;
+}
+:root {
+  --bg-color: #fcc302;
+  --text-color: #ffffff;
+  --btn-color: #00bec9;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/* Header Section Start */
+/* Header Section */
+header {
+  background-color: #eaae00;
+}
+header img {
+  max-width: 50%;
+}
+.header__wrapper {
+  padding: 10px 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav,
+.header__search {
+  display: none;
+}
+#bars {
+  display: block;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+/* Header Section End */
+/* main Section Start */
+/* Slider Section  */
+.slider {
+  background-color: var(--bg-color);
+}
+.slider__wrapper {
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 40px;
+}
+.slider__text h1 {
+  font-size: 2rem;
+  line-height: 1;
+  padding-bottom: 10px;
+  color: var(--text-color);
+}
+.slider__text p {
+  color: var(--text-color);
+  text-align: justify;
+  padding-bottom: 10px;
+}
+.btn {
+  background-color: var(--btn-color);
+  padding: 15px 20px;
+  border: none;
+  color: var(--text-color);
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn--transparent {
+  background-color: transparent;
+  border: 3px solid #fff;
+  transition-duration: 0.3s;
+  margin-left: 20px;
+}
+.btn--transparent:hover {
+  background-color: #00bec9;
+}
+/* Service Section */
+.service__wrapper {
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 50px;
+}
+.service__text h1 {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.service__text p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.btn--yellow {
+  background-color: var(--bg-color);
+}
+/* Health Care */
+.section__header {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section__header h1 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.section__header p {
+  color: var(--text-color);
+  line-height: 1.3;
+}
+.health {
+  background-color: var(--bg-color);
+}
+.health__wrapper {
+  margin-top: 30px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 40px;
+}
+.health__card img {
+  width: 100%;
+}
+.health__card--desc {
+  text-align: center;
+  color: var(--text-color);
+}
+.health__card--desc h3 {
+  font-size: 1.5rem;
+}
+/* main Section End */
+/* Footer Section Start */
+/* Footer Section End */ ;

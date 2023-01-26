@@ -1,0 +1,162 @@
+:root {
+  --bg-color: #fcc302;
+  --text-color: #ffffff;
+  --btn-color: #00bec9;
+}
+/* ========================== Tablet ============================= */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 60px 0;
+  }
+  /* Header Section Start */
+  header img {
+    max-width: 60%;
+  }
+  /* Header Section End */
+  /* main Section Start */
+  .slider__wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-gap: 60px;
+  }
+  /* Slider Section */
+  .service__wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-gap: 50px;
+  }
+  /* Health Care */
+  .section__header {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .health__wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+  }
+  .health__card:first-child {
+    grid-column: 1 / span 6;
+  }
+
+  .health__card:nth-child(2) {
+    grid-column: 7 / span 6;
+  }
+  .health__card:last-child {
+    grid-column: 1 / span 6;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+  }
+  /* main Section End */
+  /* Footer Section Start */
+  /* Footer Section End */
+}
+/* ========================== desktop ============================= */
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 100px 0;
+  }
+  /* Header Section Start */
+  /* Header Section */
+  .header__nav,
+  .header__search {
+    display: block;
+  }
+  #bars {
+    display: none;
+  }
+  .header__nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 30px;
+  }
+  .header__nav ul li a {
+    color: var(--text-color);
+  }
+  .header__search {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  .header__search input {
+    border: none;
+    outline: none;
+    padding: 8px;
+  }
+  .header__search i {
+    background-color: var(--btn-color);
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  /* Header Section End */
+  /* main Section Start */
+  /* Slider Section */
+  .slider__text h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  .service__text h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  /* Service Section */
+  .service__wrapper {
+    grid-column-gap: 120px;
+  }
+  /* Health Care */
+  .section__header {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section__header h1 {
+    font-size: 3rem;
+  }
+  .health__wrapper {
+    grid-gap: 50px;
+  }
+  .health__card:first-child {
+    grid-column: 1 / span 4;
+  }
+
+  .health__card:nth-child(2) {
+    grid-column: 5 / span 4;
+  }
+  .health__card:last-child {
+    grid-column: 9 / span 4;
+    position: relative;
+    left: 0%;
+    transform: translateX(0, 0);
+  }
+  /* main Section End */
+  /* Footer Section Start */
+  /* Footer Section End */
+}
+/* ========================== large ============================= */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  /* Header Section Start */
+  /* Header Section End */
+  /* main Section Start */
+  /* main Section End */
+  /* Footer Section Start */
+  /* Footer Section End */
+}
