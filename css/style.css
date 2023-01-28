@@ -121,6 +121,7 @@ header img {
   margin: 0 auto;
   text-align: center;
 }
+
 .section__header h1 {
   font-size: 2.25rem;
   text-transform: uppercase;
@@ -131,16 +132,24 @@ header img {
   color: var(--text-color);
   line-height: 1.3;
 }
+.section__header--black h1,
+.section__header--black p {
+  color: black;
+}
 .health {
   background-color: var(--bg-color);
 }
-.health__wrapper {
+.health__wrapper,
+.price__wrapper,
+.team__wrapper {
   margin-top: 30px;
   display: grid;
   grid-auto-flow: row;
   grid-row-gap: 40px;
 }
-.health__card img {
+.health__card img,
+.price__card img,
+.team__card img {
   width: 100%;
 }
 .health__card--desc {
@@ -149,6 +158,69 @@ header img {
 }
 .health__card--desc h3 {
   font-size: 1.5rem;
+}
+/* Price Section  */
+.price {
+  background-color: var(--bg-color);
+}
+.price__card h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.75rem;
+  margin-top: 10px;
+}
+.price__card div {
+  display: grid;
+  justify-content: center;
+}
+.price__card div button {
+  padding: 12px 30px;
+  border-radius: 20px;
+}
+/* team Section  */
+.team__card--desc {
+  text-align: center;
+}
+.team__card ul {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-column-gap: 20px;
+  margin-top: 10px;
+}
+.team__card ul li a {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+/* Review Section */
+.review {
+  background: linear-gradient(#f0bf1ebe, #f0bf1ebe),
+    url(../images/review-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.review__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+  text-align: center;
+}
+.review__card:last-child {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50, -50%);
+}
+.review__card h2,
+.review__card h3 {
+  color: white;
 }
 /* main Section End */
 /* Footer Section Start */
