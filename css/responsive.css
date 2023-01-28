@@ -39,24 +39,45 @@
     margin: 0 auto;
     text-align: center;
   }
-  .health__wrapper {
+  .health__wrapper,
+  .price__wrapper,
+  .team__wrapper {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 40px;
   }
-  .health__card:first-child {
+  .health__card:first-child,
+  .price__card:first-child,
+  .team__card:first-child {
     grid-column: 1 / span 6;
   }
 
-  .health__card:nth-child(2) {
+  .health__card:nth-child(2),
+  .price__card:nth-child(2),
+  .team__card:nth-child(2) {
     grid-column: 7 / span 6;
   }
-  .health__card:last-child {
+  .health__card:last-child,
+  .price__card:last-child,
+  .team__card:last-child {
     grid-column: 1 / span 6;
     position: relative;
     left: 50%;
     transform: translateX(-50%, -50%);
+  }
+  /* Review Section */
+
+  .review__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-gap: 30px;
+  }
+  .review__card:last-child {
+    position: relative;
+    left: 00%;
+    transform: translateX(0, 0%);
   }
   /* main Section End */
   /* Footer Section Start */
@@ -85,8 +106,14 @@
     grid-auto-flow: column;
     grid-column-gap: 30px;
   }
+  .header__nav ul li {
+    position: relative;
+  }
   .header__nav ul li a {
     color: var(--text-color);
+  }
+  .header__nav ul li:hover a {
+    color: rgba(240, 248, 255, 0.808);
   }
   .header__search {
     display: grid;
@@ -102,6 +129,45 @@
     padding: 8px;
     color: white;
     cursor: pointer;
+  }
+  /* Dropdown */
+  .header__nav ul ul {
+    display: none;
+    grid-auto-flow: row;
+    position: absolute;
+    background-color: #eaae00;
+    width: 180px;
+    top: 23px;
+    padding-top: 20px;
+  }
+  .header__nav ul ul ul {
+    visibility: hidden;
+    left: 100%;
+    top: 0;
+    padding-top: 0;
+  }
+  .header__nav ul ul li a {
+    padding: 10px;
+    display: block;
+  }
+  .header__nav ul li:hover ul {
+    display: grid;
+  }
+  .header__nav ul ul li:hover ul {
+    visibility: visible;
+  }
+
+  .header__nav ul ul li:hover ul li a {
+    background-color: transparent;
+    border-bottom: none;
+  }
+  .header__nav ul ul ul li:hover {
+    background-color: #fcc202d0;
+    border-bottom: 1px solid white;
+  }
+  .header__nav ul ul li:hover a {
+    background-color: #fcc202d0;
+    border-bottom: 1px solid white;
   }
   /* Header Section End */
   /* main Section Start */
@@ -127,17 +193,24 @@
   .section__header h1 {
     font-size: 3rem;
   }
-  .health__wrapper {
+  .health__wrapper,
+  .price__wrapper {
     grid-gap: 50px;
   }
-  .health__card:first-child {
+  .health__card:first-child,
+  .team__card:first-child,
+  .price__card:first-child {
     grid-column: 1 / span 4;
   }
 
-  .health__card:nth-child(2) {
+  .health__card:nth-child(2),
+  .team__card:nth-child(2),
+  .price__card:nth-child(2) {
     grid-column: 5 / span 4;
   }
-  .health__card:last-child {
+  .health__card:last-child,
+  .price__card:last-child,
+  .team__card:last-child {
     grid-column: 9 / span 4;
     position: relative;
     left: 0%;
