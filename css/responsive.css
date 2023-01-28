@@ -41,7 +41,8 @@
   }
   .health__wrapper,
   .price__wrapper,
-  .team__wrapper {
+  .team__wrapper,
+  .post__wrapper {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(12, 1fr);
@@ -49,18 +50,21 @@
   }
   .health__card:first-child,
   .price__card:first-child,
-  .team__card:first-child {
+  .team__card:first-child,
+  .post__card:first-child {
     grid-column: 1 / span 6;
   }
 
   .health__card:nth-child(2),
   .price__card:nth-child(2),
-  .team__card:nth-child(2) {
+  .team__card:nth-child(2),
+  .post__card:nth-child(2) {
     grid-column: 7 / span 6;
   }
   .health__card:last-child,
   .price__card:last-child,
-  .team__card:last-child {
+  .team__card:last-child,
+  .post__card:last-child {
     grid-column: 1 / span 6;
     position: relative;
     left: 50%;
@@ -81,6 +85,21 @@
   }
   /* main Section End */
   /* Footer Section Start */
+  /* Footer Section Start */
+  footer {
+    padding: 80px 0;
+  }
+  .footer__wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 30px;
+  }
+  .footer__card:last-child {
+    text-align: right;
+  }
+  .footer__card:last-child .footer__button {
+    justify-content: end;
+  }
   /* Footer Section End */
 }
 /* ========================== desktop ============================= */
@@ -199,18 +218,21 @@
   }
   .health__card:first-child,
   .team__card:first-child,
-  .price__card:first-child {
+  .price__card:first-child,
+  .post__card:first-child {
     grid-column: 1 / span 4;
   }
 
   .health__card:nth-child(2),
   .team__card:nth-child(2),
-  .price__card:nth-child(2) {
+  .price__card:nth-child(2),
+  .post__card:nth-child(2) {
     grid-column: 5 / span 4;
   }
   .health__card:last-child,
   .price__card:last-child,
-  .team__card:last-child {
+  .team__card:last-child,
+  .post__card:last-child {
     grid-column: 9 / span 4;
     position: relative;
     left: 0%;
@@ -226,10 +248,4 @@
     max-width: 1140px;
     margin: 0 auto;
   }
-  /* Header Section Start */
-  /* Header Section End */
-  /* main Section Start */
-  /* main Section End */
-  /* Footer Section Start */
-  /* Footer Section End */
 }

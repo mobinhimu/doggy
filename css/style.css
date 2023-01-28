@@ -141,7 +141,8 @@ header img {
 }
 .health__wrapper,
 .price__wrapper,
-.team__wrapper {
+.team__wrapper,
+.post__wrapper {
   margin-top: 30px;
   display: grid;
   grid-auto-flow: row;
@@ -149,7 +150,8 @@ header img {
 }
 .health__card img,
 .price__card img,
-.team__card img {
+.team__card img,
+.post__card img {
   width: 100%;
 }
 .health__card--desc {
@@ -181,14 +183,16 @@ header img {
 .team__card--desc {
   text-align: center;
 }
-.team__card ul {
+.team__card ul,
+.footer__button ul {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
   grid-column-gap: 20px;
   margin-top: 10px;
 }
-.team__card ul li a {
+.team__card ul li a,
+.footer__button ul li a {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -222,6 +226,113 @@ header img {
 .review__card h3 {
   color: white;
 }
+/* Recent Post  */
+/* .post__card--desc h3 {
+  font-style: 5rem;
+} */
+.post__card--desc {
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 15px;
+  margin-top: -10px;
+}
+.post__card--desc h3 {
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+.post__card--desc span {
+  color: #00bec9;
+  font-weight: bold;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.post__card--desc p {
+  text-align: justify;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+.post__card--desc a {
+  color: #00bec9;
+  font-weight: 500;
+}
+.post__card {
+  transition-duration: 0.3s;
+}
+.post__card:hover {
+  box-shadow: 0px 0px 30px 0px #ddd;
+  cursor: pointer;
+}
+.post__card:hover .post__card--desc {
+  border: none;
+}
 /* main Section End */
 /* Footer Section Start */
+footer {
+  background-color: #343434;
+  padding: 50px 0;
+}
+.footer__wrapper {
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 30px;
+}
+.footer__card h1 {
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+.footer__card a {
+  color: #ffffff;
+  line-height: 2;
+  text-transform: capitalize;
+}
+.footer__card a:hover {
+  color: #ffffffb9;
+}
+.footer__card p {
+  color: #ffffff;
+}
+.footer__card div {
+  display: grid;
+  grid-auto-flow: column;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.footer__card div input {
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: var(--bg-color);
+  color: #ffffff;
+}
+.footer__card div button {
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #00bec9;
+  color: #ffffff;
+}
+.footer__button ul {
+  justify-content: start;
+}
+.footer__button ul li a {
+  background-color: #ffffff;
+  color: black;
+  transition-duration: 0.2s;
+}
+.footer__button ul li a:hover {
+  background-color: var(--bg-color);
+  color: white;
+}
+.copyright {
+  color: #ffffff;
+  padding-top: 40px;
+  text-align: center;
+}
+.copyright a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+}
 /* Footer Section End */ ;
